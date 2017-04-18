@@ -13,7 +13,6 @@ public class ReadAndWrite {
 
       List<String> lines = Files.readAllLines(sourceFile);
       Files.write(destinationFile, lines, Charset.defaultCharset());
-
     } catch (Exception e) {
       System.out.println("Woops, and error has occurred: " + e.getClass());
     }
