@@ -32,7 +32,6 @@ public class Deck {
   }
 
   public Card drawCard() {
-    System.out.println(this.cardsInDeck.get(this.cardsInDeck.size()-1));
     return this.cardsInDeck.remove(this.cardsInDeck.size()-1);
   }
 
