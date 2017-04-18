@@ -4,10 +4,11 @@ public class App {
 
   public static void main(String[] args) {
 
-    Deck deck1 = new Deck(12);
+    Deck deck = new Deck(12);
+    System.out.println(deck);
 
-    for (int i=0; i < 12; i++) {
-      System.out.println(deck1.cardsInDeck.get(i));
-    }
+    Card drawn = deck.drawCard();
+    System.out.println(drawn);
+    System.out.println(deck);
   }
 }
