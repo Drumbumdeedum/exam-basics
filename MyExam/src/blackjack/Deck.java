@@ -9,9 +9,25 @@ public class Deck {
 
   public Deck(int nrOfCards) {
     cardsInDeck = new ArrayList<>();
-    for (int i=0; i < nrOfCards; i++) {
+
+    if (cardsInDeck.size() == 0) {
       Card newCard = new Card();
       cardsInDeck.add(newCard);
+    }
+
+    while (cardsInDeck.size() <= nrOfCards) {
+      Card newCard = new Card();
+      boolean isInDeck = false;
+
+      for (int i=0; i < cardsInDeck.size(); i++) {
+        if (cardsInDeck.get(i).color == newCard.color && cardsInDeck.get(i).value == newCard.value) {
+          isInDeck = true;
+        }
+      }
+
+      if (isInDeck == false) {
+        cardsInDeck.add(newCard);
+      }
     }
   }
 
