@@ -1,4 +1,4 @@
-package odd.avg;
+package oddavg;
 
 import java.util.ArrayList;
 import java.util.List;
