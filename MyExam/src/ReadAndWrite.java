@@ -15,7 +15,7 @@ public class ReadAndWrite {
       Files.write(destinationFile, lines, Charset.defaultCharset());
 
     } catch (Exception e) {
-      System.out.println("Woops, and error has occurred!");
+      System.out.println("Woops, and error has occurred: " + e.getClass());
     }
   }
 }

@@ -19,7 +19,7 @@ public class Handler {
         copyMechanism.readWrite(args[0], args[1]);
       }
     } catch(Exception e) {
-      System.out.println("Woops, and error has occurred!");
+      System.out.println("Woops, and error has occurred: " + e.getClass());
     }
   }
 
@@ -35,5 +35,3 @@ public class Handler {
     System.out.println("Too many arguments provided, follow usage guidelines:");
   }
 }
-
-
