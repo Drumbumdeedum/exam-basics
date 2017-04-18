@@ -34,17 +34,16 @@ The application is accepted if:
 
 ![anatomy](anatomy/AnatomyJava.png)
 
-#### Your answer:
-[add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
-8:   
+#### Your answer:  
+1:  header of the method
+2:  return value type declaration
+3:  name of method
+4:  input parameter type declaration
+5:  input parameter name, value passed to the method
+6:  return value
+7:  body of the method
+8:  return statement + return value  
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+A constructor is very similar to a method and it's always called when we want to create a new instance of a certain object. The difference between a constructor and a "normal" method is, that while the method has a return type, the constructor does not. The name of the constructor must be exactly the same as the name of the class.
